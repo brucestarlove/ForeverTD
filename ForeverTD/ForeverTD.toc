@@ -8,6 +8,7 @@
 ## AddonCompartmentFuncOnEnter: ForeverTD_OnAddonCompartmentEnter
 ## AddonCompartmentFuncOnLeave: ForeverTD_OnAddonCompartmentLeave
 ## X-Website: https://github.com/brucestarlove/ForeverTD
+## X-Curse-Project-ID: 1771846
 
 #@debug@
 # The repository's version, for development. A release build (the BigWigs packager, or tools/package.lua) deletes

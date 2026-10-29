@@ -18,7 +18,7 @@ Solo, free, and for WoW: Forever (interface 16001). Found a bug, or a level that
 
 ## Install
 
-**CurseForge:** coming soon.
+**CurseForge:** [ForeverTD on CurseForge](https://www.curseforge.com/projects/1771846) (awaiting CurseForge's approval; until then, the zip below).
 
 **By hand (.zip):**
 
@@ -74,7 +74,7 @@ mklink /J "C:\Program Files (x86)\World of Warcraft\_classic_beta_\Interface\Add
 
 **Balance:** two bots play every level. *Greedy* stands in for a sensible newcomer (a mixed build on good cells, with a little research); *sharp* for a good player (it tries each purchase on a copy of the game and buys what works). Normal must stay winnable for the newcomer with some margin, and for the good player with no research at all. `lua tools/sim.lua` checks every level, `--headroom` shows how much tougher each level could be, `--waves` does the same wave by wave, and `--scale 90 <level> --write` makes a level 10% easier. Read `tools/sim.lua`'s header for the rest.
 
-**Release:** push a tag (`git tag v1.0.1 && git push origin v1.0.1`). GitHub Actions runs the [BigWigs packager](https://github.com/BigWigsMods/packager), which builds `ForeverTD.zip` without the dev tools (`.pkgmeta`, and the TOC's `#@debug@` blocks), sets the TOC's version from the tag, attaches the zip to a GitHub release and, once `ForeverTD.toc` has a `## X-Curse-Project-ID` and the repository has a `CF_API_KEY` secret, uploads it to CurseForge. `lua tools/package.lua 1.0.1` builds the same zip locally, for a clean-install test.
+**Release:** push a tag (`git tag v1.0.1 && git push origin v1.0.1`). GitHub Actions runs the [BigWigs packager](https://github.com/BigWigsMods/packager), which builds `ForeverTD.zip` without the dev tools (`.pkgmeta`, and the TOC's `#@debug@` blocks), sets the TOC's version from the tag, attaches the zip to a GitHub release and uploads it to CurseForge (the project ID is in `ForeverTD.toc`; the token is the repository's `CF_API_KEY` secret). `lua tools/package.lua 1.0.1` builds the same zip locally, for a clean-install test.
 
 ## License
 
