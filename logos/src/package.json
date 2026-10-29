@@ -1,0 +1,11 @@
+{
+  "name": "forevertd-logos",
+  "private": true,
+  "description": "Builds ForeverTD's logo from WoW's own art. Not part of the addon.",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "sharp": "0.35.5"
+  }
+}

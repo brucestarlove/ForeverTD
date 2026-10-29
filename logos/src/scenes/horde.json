@@ -1,0 +1,25 @@
+{
+  "level": "Tiragarde Keep (horde-4): Kul Tiras sailors and marines land, Lieutenant Benedict leads; the level's own advice is 'bring lightning'. The Shaman (rank 3: range 2.4, chain 3, jump 1.6) joins at level 4, Thrall at 5, so he's there on a replay.",
+  "size": 512,
+  "scale": 2,
+  "cells": 6,
+  "campaign": "horde",
+  "vignette": 0.35,
+  "frame": {"edge": 40, "inset": 0.22},
+  "map": {"zone": "Durotar", "left": 450, "top": 260, "width": 340},
+  "road": [[5, 4], [4, 4], [3, 4], [3, 3], [3, 2], [3, 1], [2, 1], [1, 1], [0, 1]],
+  "shot": {"tower": "shaman", "range": 2.4, "chain": 3, "jump": 1.6},
+  "towers": [
+    {"id": "shaman", "at": [4, 2], "icon": "Spell_Nature_ChainLightning", "rank": 3},
+    {"id": "axe", "at": [2, 4], "icon": "INV_ThrowingAxe_01", "rank": 2},
+    {"id": "thrall", "at": [1, 3], "icon": "Spell_Nature_BloodLust", "hero": true}
+  ],
+  "creeps": [
+    {"id": "m2", "at": [0.75, 1.5], "icon": "INV_Misc_Head_Human_01", "hp": 0.6},
+    {"id": "benedict", "at": [2.05, 1.5], "icon": "INV_Misc_Head_Human_01", "boss": true, "size": 34, "hp": 0.85},
+    {"id": "m1", "at": [3.5, 1.6], "icon": "INV_Misc_Head_Human_01", "hp": 0.35},
+    {"id": "s2", "at": [3.5, 2.95], "icon": "INV_Misc_Head_Human_02", "hp": 0.5},
+    {"id": "s1", "at": [3.75, 4.5], "icon": "INV_Misc_Head_Human_02", "hp": 0.65},
+    {"id": "s4", "at": [5.0, 4.5], "icon": "INV_Misc_Head_Human_02", "hp": 0.8}
+  ]
+}

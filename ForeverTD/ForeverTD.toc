@@ -1,0 +1,46 @@
+## Interface: 16001
+## Title: ForeverTD
+## Notes: Tower defense minigame for WoW Forever: four campaigns, Horde, Alliance, Sentinels and Forsaken. /td to play; closing the window pauses it.
+## Author: Lavitz Starlove
+## IconTexture: Interface\Icons\Ability_Warrior_DefensiveStance
+## SavedVariables: ForeverTDDB
+## AddonCompartmentFunc: ForeverTD_OnAddonCompartmentClick
+## AddonCompartmentFuncOnEnter: ForeverTD_OnAddonCompartmentEnter
+## AddonCompartmentFuncOnLeave: ForeverTD_OnAddonCompartmentLeave
+## X-Website: https://github.com/brucestarlove/ForeverTD
+
+#@debug@
+# The repository's version, for development. A release build (the BigWigs packager, or tools/package.lua) deletes
+# this block and uncomments the next, so the players' TOC carries the release's version.
+## Version: 1.0.0
+#@end-debug@
+#@non-debug@
+# ## Version: @project-version@
+#@end-non-debug@
+
+Content.lua
+Campaigns\Horde.lua
+Campaigns\Alliance.lua
+Campaigns\Sentinels.lua
+Campaigns\Forsaken.lua
+Story.lua
+Levels.lua
+Engine.lua
+Meta.lua
+Board.lua
+Ui.lua
+Menu.lua
+Shell.lua
+
+#@debug@
+# Dev tools (/td dev). The game never calls into them and they build nothing until opened; release builds leave
+# this block out (and .pkgmeta leaves out the Dev and Media folders).
+Dev\DevCore.lua
+Dev\AssetList.lua
+Dev\Dev.lua
+Dev\Bench.lua
+Dev\Icons.lua
+Dev\Creatures.lua
+Dev\Maps.lua
+Dev\Probe.lua
+#@end-debug@

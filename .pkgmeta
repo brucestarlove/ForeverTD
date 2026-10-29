@@ -1,0 +1,20 @@
+# Read by the BigWigs packager (https://github.com/BigWigsMods/packager), which builds the zip players download.
+# It packages only files tracked by git, already leaves out anything whose name starts with a dot, and applies the
+# TOC's #@debug@ / #@non-debug@ blocks (the dev tools out, the tag's version in). tools/package.lua does the same
+# locally.
+package-as: ForeverTD
+
+# The addon lives in this repository's ForeverTD folder, beside its tests and tools: the package is that folder's
+# contents, so the zip unpacks to a single ForeverTD folder.
+move-folders:
+  ForeverTD/ForeverTD: ForeverTD
+
+# Development material and page artwork that never ship.
+ignore:
+  - ForeverTD/Dev
+  - ForeverTD/Media
+  - tests
+  - tools
+  - logos
+  - README.md
+  - CHANGELOG.md

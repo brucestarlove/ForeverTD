@@ -1,0 +1,9 @@
+# Build output: tools/package.lua's, and the BigWigs packager's when run locally.
+dist/
+.release/
+
+# Private working notes: agent instructions, the handoff, plans, the development log and the test rounds.
+# They stay on the developer's machine and never reach the public repository.
+CLAUDE.md
+AGENTS.md
+notes/
